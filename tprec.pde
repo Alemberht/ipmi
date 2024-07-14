@@ -1,4 +1,4 @@
-//https://youtu.be/BT0LSv52k64
+
 void ilusion(int posx){
   image(ilusion,0,0,400,700);
     for (int i = 0; i < 8; i++) {
@@ -12,7 +12,7 @@ void ilusion(int posx){
         stroke(c);
         line(x + k, y, x + k, y + 50);
         if(mousePressed){
-        x+=5;
+         x += xsuma();
         }
       }
     }
@@ -28,9 +28,13 @@ void ilusion(int posx){
         stroke(c);
         line(x + k, y, x + k, y + 50);
         if(mousePressed){
-        x+=5;
+        x += xsuma();
         }
       }
     }
   }
+}
+
+int  xsuma (){ 
+  return 1;
 }
